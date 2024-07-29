@@ -25,7 +25,7 @@ This project aims to predict customer churn using machine learning techniques.
    python model_training.py
 
 - To start the Flask API:
-         ```sh
+   ```sh
          python app.py
 - Make predictions by sending a POST request to http://127.0.0.1:5000/predict with JSON data:
       {
