@@ -29,9 +29,8 @@ This project aims to predict customer churn using machine learning techniques.
          python app.py
 - Make predictions by sending a POST request to http://127.0.0.1:5000/predict with JSON data:
    ```sh
-   {
-      "data": [[1, 0, 45, ...]]
-   }
+ curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -d '{"data": [[12, 29.85, 345.5, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 2]]}'
+
 
 
 
