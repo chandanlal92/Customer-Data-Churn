@@ -7,6 +7,11 @@ app = Flask(__name__)
 # Load the trained model
 model = joblib.load('churn_model.pkl')
 
+
+@app.route('/')
+def home():
+    return "Welcome to the Machine Learning API!"
+
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json(force=True)
